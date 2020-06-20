@@ -28,9 +28,15 @@ y = 375
 radius = 20
 arcade.draw_circle_filled(x, y, radius, arcade.color.BLACK)
 
-x = 100
-y = 100
-arcade.draw_arc_outline()
+# Creating Smile
+x = 300
+y = 270
+width = 250
+height = 200
+start_angle = 180
+end_angle = 360
+border_width = 10
+arcade.draw_arc_outline(x,y,width, height,arcade.color.BLACK_BEAN, start_angle, end_angle, border_width)
 
 
 arcade.finish_render()
